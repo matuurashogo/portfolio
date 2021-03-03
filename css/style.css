@@ -1,0 +1,131 @@
+body{
+  font-family: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+
+.main {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+/* topTitle*/
+.Title{
+  font-size: 30px;
+}
+.topTitle {
+  padding: 150px;
+}
+.topTitle h1{
+  font-size: 70px;
+}
+
+.topTitle h2{
+  font-size: 40px;
+}
+/* work*/
+.work {
+  margin: 40px 0;
+}
+
+.work h2{
+  margin: 10px 0;
+  font-size: 25px;
+}
+
+.work p {
+  font-size: 20px;
+}
+
+.slider{
+    margin: 100px auto;
+    width: 80%;
+
+}
+.slider img{
+    height: auto;
+    width: 100%;
+    height: 400px;
+}
+/*slick setting*/
+.slick-prev:before,
+.slick-next:before {
+    color: #cccccc;
+}
+
+.worktitle {
+  font-size: 30px;
+}
+
+.overview{
+  line-height: 1.4em;
+}
+.url {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.url a{
+  display: inline-block;
+  position: relative;
+  padding: 5px;
+  border: 2px solid #333;
+  transition: .3s;
+}
+.url a:hover {
+  color: #fff;
+}
+.url a::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  background: #333;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: transform .3s;
+}
+.url a:hover::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+/*intro*/
+.intro {
+  margin: 150px 0;
+
+}
+.intro h1 {
+  font-size: 30px;
+}
+.intro span {
+  border: 1px solid #cccccc;
+  font-size: 25px;
+  width: 200px;
+  padding: 5px;
+}
+.intro p {
+  padding: 5px;
+  border: 1px solid #cccccc;
+  font-size: 25px;
+  width: 600px;
+}
+/*レスポンシブ*/
+@media screen and (max-width: 600px){
+  .Title{
+    font-size: 50px;
+  }
+  .worktitle{
+    font-size: 40px;
+  }
+  .workview{
+    font-size: 35px;
+  }
+  .overview{
+    font-size: 30px;
+  }
+}
